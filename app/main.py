@@ -23,7 +23,6 @@ logging.basicConfig(
     ]
 )
 
-
 # KITSU
 gazu.set_host(KITSU_URL + "/api")
 gazu.set_event_host(KITSU_URL)
