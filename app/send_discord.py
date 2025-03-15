@@ -1,7 +1,7 @@
 import gazu
 import logging
 import discord
-from .config import config
+from config import config
 
 # VARIABLES
 TOKEN = config.get('Discord', 'TOKEN')

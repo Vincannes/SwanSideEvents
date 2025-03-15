@@ -2,8 +2,8 @@ import os
 import gazu
 import logging
 
-from .config import config
-from .send_discord import on_task_status_change
+from config import config
+from send_discord import on_task_status_change
 
 MAIN_DIR = os.path.dirname(os.path.dirname(__file__))
 EVENT_LOG = os.path.join(MAIN_DIR, "discord_bot.log")
