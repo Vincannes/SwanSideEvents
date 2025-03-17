@@ -1,0 +1,15 @@
+[Unit]
+Description=Swanside Daemon
+After=network.target
+
+[Service]
+ExecStart=/home/vinc/SwanSideEvents/run.sh
+WorkingDirectory=/home/vinc/SwanSideEvents
+Restart=always
+User=vinc
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

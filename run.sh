@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ~/SwanSideEvents
 
 source venv/bin/activate
