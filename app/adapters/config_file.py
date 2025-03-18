@@ -1,7 +1,7 @@
 import os
 import configparser
 
-MAIN_DIR = os.path.dirname(os.path.dirname(__file__))
+MAIN_DIR = os.path.dirname((os.path.dirname(__file__)))
 
 
 def get_config_file():

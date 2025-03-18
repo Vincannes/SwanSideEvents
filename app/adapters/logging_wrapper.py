@@ -3,7 +3,7 @@
 # copyright	:Vincannes
 
 import logging
-from app.constants import EVENT_LOG
+from constants import EVENT_LOG
 
 _logger = None
 
@@ -38,3 +38,6 @@ def get_logger():
     if _logger is None:
         raise RuntimeError("Le logger n'a pas été initialisé. Appelle 'init_logger()' d'abord.")
     return _logger
+
+
+init_logger()

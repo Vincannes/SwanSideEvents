@@ -11,6 +11,7 @@ config = get_config_file()
 TOKEN = config.get('Discord', 'TOKEN')
 MESSAGE_TYPE = "{user} change status ({status}) for [{type_of_entity}] {entity_type} {entity}:\n    '{message}'"
 
+
 def _get_channel_id(event):
     project_id = event.get("project_id")
     prod_name = gazu.project.get_project(project_id).get('name')
